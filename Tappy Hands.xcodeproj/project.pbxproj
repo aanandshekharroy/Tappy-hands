@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500D03331FF680D0000E5EC5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500D03321FF680C7000E5EC5 /* Social.framework */; };
 		507F478D1FF4EF2E0043C317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507F478C1FF4EF2E0043C317 /* AppDelegate.swift */; };
 		507F478F1FF4EF2E0043C317 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507F478E1FF4EF2E0043C317 /* ViewController.swift */; };
 		507F47921FF4EF2E0043C317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507F47901FF4EF2E0043C317 /* Main.storyboard */; };
 		507F47941FF4EF2E0043C317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507F47931FF4EF2E0043C317 /* Assets.xcassets */; };
 		507F47971FF4EF2E0043C317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507F47951FF4EF2E0043C317 /* LaunchScreen.storyboard */; };
+		50EF27781FF54FAE005CE9EC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EF27771FF54FAE005CE9EC /* GameViewController.swift */; };
+		50EF277A1FF63818005CE9EC /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EF27791FF63818005CE9EC /* EndViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		500D03321FF680C7000E5EC5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		507F47891FF4EF2E0043C317 /* Tappy Hands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tappy Hands.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		507F478C1FF4EF2E0043C317 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		507F478E1FF4EF2E0043C317 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		507F47931FF4EF2E0043C317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		507F47961FF4EF2E0043C317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		507F47981FF4EF2E0043C317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50EF27771FF54FAE005CE9EC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		50EF27791FF63818005CE9EC /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				500D03331FF680D0000E5EC5 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		500D03311FF680C7000E5EC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				500D03321FF680C7000E5EC5 /* Social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		507F47801FF4EF2E0043C317 = {
 			isa = PBXGroup;
 			children = (
 				507F478B1FF4EF2E0043C317 /* Tappy Hands */,
 				507F478A1FF4EF2E0043C317 /* Products */,
+				500D03311FF680C7000E5EC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +72,12 @@
 			children = (
 				507F478C1FF4EF2E0043C317 /* AppDelegate.swift */,
 				507F478E1FF4EF2E0043C317 /* ViewController.swift */,
+				50EF27771FF54FAE005CE9EC /* GameViewController.swift */,
 				507F47901FF4EF2E0043C317 /* Main.storyboard */,
 				507F47931FF4EF2E0043C317 /* Assets.xcassets */,
 				507F47951FF4EF2E0043C317 /* LaunchScreen.storyboard */,
 				507F47981FF4EF2E0043C317 /* Info.plist */,
+				50EF27791FF63818005CE9EC /* EndViewController.swift */,
 			);
 			path = "Tappy Hands";
 			sourceTree = "<group>";
@@ -136,7 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50EF277A1FF63818005CE9EC /* EndViewController.swift in Sources */,
 				507F478F1FF4EF2E0043C317 /* ViewController.swift in Sources */,
+				50EF27781FF54FAE005CE9EC /* GameViewController.swift in Sources */,
 				507F478D1FF4EF2E0043C317 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
