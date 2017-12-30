@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		500D03331FF680D0000E5EC5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500D03321FF680C7000E5EC5 /* Social.framework */; };
+		500D03351FF694FE000E5EC5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500D03341FF694F6000E5EC5 /* MessageUI.framework */; };
 		507F478D1FF4EF2E0043C317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507F478C1FF4EF2E0043C317 /* AppDelegate.swift */; };
 		507F478F1FF4EF2E0043C317 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507F478E1FF4EF2E0043C317 /* ViewController.swift */; };
 		507F47921FF4EF2E0043C317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507F47901FF4EF2E0043C317 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		500D03321FF680C7000E5EC5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		500D03341FF694F6000E5EC5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		507F47891FF4EF2E0043C317 /* Tappy Hands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tappy Hands.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		507F478C1FF4EF2E0043C317 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		507F478E1FF4EF2E0043C317 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +38,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				500D03331FF680D0000E5EC5 /* Social.framework in Frameworks */,
+				500D03351FF694FE000E5EC5 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +48,7 @@
 		500D03311FF680C7000E5EC5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				500D03341FF694F6000E5EC5 /* MessageUI.framework */,
 				500D03321FF680C7000E5EC5 /* Social.framework */,
 			);
 			name = Frameworks;
