@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class GameViewController: UIViewController {
+class GameViewController: UIViewController , GADBannerViewDelegate{
     @IBOutlet weak var timeRemainingLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var tapMeButton: UIButton!
     @IBOutlet weak var timeRemaining: UILabel!
     
+    @IBOutlet weak var bannerView: GADBannerView!
     @IBOutlet weak var scoreDisplay: UILabel!
     var tapCount = 0
     var gameStartCountdown = 3
@@ -30,6 +32,19 @@ class GameViewController: UIViewController {
     tapMeButton.setTitle(String(gameStartCountdown), for: .normal)
         tapMeButton.isEnabled = false
         gameStartTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameViewController.countdown), userInfo: nil, repeats: true)
+        bannerView.isHidden = true
+        bannerView.delegate = self
+        bannerView.adUnitID = "ca-app-pub-6285653045864394/8616734152"
+        bannerView.adSize = kGADAdSizeSmartBannerPortrait
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+    }
+    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+        bannerView.isHidden = false
+        
+    }
+    func adView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
+        bannerView.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {

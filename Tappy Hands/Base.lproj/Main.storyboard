@@ -64,6 +64,13 @@
                                     <segue destination="M41-zb-8rD" kind="presentation" modalTransitionStyle="crossDissolve" id="NcW-eA-7Q3"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zi-JJ-yb1" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="430" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="0.012441138698630137" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SaM-ha-yTM"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -74,7 +81,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nWS-9G-fx8" secondAttribute="trailing" constant="16" id="Aun-KS-KSF"/>
                             <constraint firstItem="yjl-3w-eXX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="D0k-H8-K0d"/>
                             <constraint firstItem="nWS-9G-fx8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="D7y-al-oVZ"/>
+                            <constraint firstItem="0zi-JJ-yb1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dne-Gy-hoO"/>
                             <constraint firstItem="JTA-lg-HW4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="MrR-QJ-ZUV"/>
+                            <constraint firstItem="0zi-JJ-yb1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TVO-Mx-322"/>
                             <constraint firstItem="yjl-3w-eXX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="V36-ZK-PxM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nWS-9G-fx8" secondAttribute="bottom" constant="20" id="ZHh-4y-yAx"/>
                             <constraint firstItem="Ne7-wA-5Ah" firstAttribute="top" secondItem="JTA-lg-HW4" secondAttribute="bottom" constant="44" id="bzA-dQ-TxV"/>
@@ -84,11 +93,13 @@
                             <constraint firstItem="nWS-9G-fx8" firstAttribute="top" secondItem="cPz-YE-S4y" secondAttribute="bottom" constant="31" id="kRs-ab-DZs"/>
                             <constraint firstItem="yjl-3w-eXX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="msZ-RW-u3g"/>
                             <constraint firstItem="Ne7-wA-5Ah" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qex-Ij-vAt"/>
+                            <constraint firstItem="0zi-JJ-yb1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="sk5-LX-paQ"/>
                             <constraint firstItem="nWS-9G-fx8" firstAttribute="height" secondItem="JTA-lg-HW4" secondAttribute="height" id="y9g-is-vDE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="0zi-JJ-yb1" id="I7M-nM-d1A"/>
                         <outlet property="buttonStartGame" destination="nWS-9G-fx8" id="Oyw-Ac-hXZ"/>
                         <outlet property="highScore" destination="cPz-YE-S4y" id="kLZ-yV-gUU"/>
                         <outlet property="labelHighScore" destination="Ne7-wA-5Ah" id="zg3-96-3Os"/>
@@ -96,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-80.625" y="133.09859154929578"/>
+            <point key="canvasLocation" x="-80.625" y="132.5"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="tHl-x1-EVW">
@@ -162,11 +173,21 @@
                                 <color key="shadowColor" white="0.0" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXz-6k-Xsy" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="430" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="0.0124411387" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0ni-xr-TIY"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="dtN-DY-6mj"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cQA-Tu-Mn7" firstAttribute="top" secondItem="PWS-po-GeY" secondAttribute="bottom" constant="8" id="6tu-Af-jzK"/>
                             <constraint firstItem="3nu-3Q-51g" firstAttribute="top" secondItem="eTs-7X-DvK" secondAttribute="bottom" constant="8" id="7Qg-sk-gDa"/>
+                            <constraint firstItem="rXz-6k-Xsy" firstAttribute="bottom" secondItem="w8E-hS-ls4" secondAttribute="bottom" id="ACa-B6-eR5"/>
+                            <constraint firstItem="rXz-6k-Xsy" firstAttribute="trailing" secondItem="w8E-hS-ls4" secondAttribute="trailing" id="HkU-ZM-Wpd"/>
                             <constraint firstItem="w8E-hS-ls4" firstAttribute="trailing" secondItem="PWS-po-GeY" secondAttribute="trailing" constant="16" id="Jum-lR-6fq"/>
                             <constraint firstItem="w8E-hS-ls4" firstAttribute="bottom" secondItem="cQA-Tu-Mn7" secondAttribute="bottom" constant="20" id="PJ0-n7-KM8"/>
                             <constraint firstItem="3nu-3Q-51g" firstAttribute="leading" secondItem="w8E-hS-ls4" secondAttribute="leading" constant="16" id="PMd-uZ-cN4"/>
@@ -175,6 +196,7 @@
                             <constraint firstItem="eZT-Ed-a5L" firstAttribute="top" secondItem="NQz-ry-ovx" secondAttribute="top" id="Rms-L4-9Na"/>
                             <constraint firstItem="eZT-Ed-a5L" firstAttribute="leading" secondItem="w8E-hS-ls4" secondAttribute="leading" id="cKu-bb-sjx"/>
                             <constraint firstItem="w8E-hS-ls4" firstAttribute="trailing" secondItem="eZT-Ed-a5L" secondAttribute="trailing" id="eXe-mk-lqJ"/>
+                            <constraint firstItem="rXz-6k-Xsy" firstAttribute="leading" secondItem="w8E-hS-ls4" secondAttribute="leading" id="hf0-K4-cym"/>
                             <constraint firstItem="cQA-Tu-Mn7" firstAttribute="leading" secondItem="w8E-hS-ls4" secondAttribute="leading" constant="16" id="jyC-c4-jo0"/>
                             <constraint firstItem="w8E-hS-ls4" firstAttribute="trailing" secondItem="0XS-6v-4qO" secondAttribute="trailing" constant="16" id="k4h-9K-L5Z"/>
                             <constraint firstItem="PWS-po-GeY" firstAttribute="leading" secondItem="w8E-hS-ls4" secondAttribute="leading" constant="16" id="kJR-LU-7t4"/>
@@ -189,6 +211,7 @@
                         <viewLayoutGuide key="safeArea" id="w8E-hS-ls4"/>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="rXz-6k-Xsy" id="NOg-Yl-89K"/>
                         <outlet property="scoreDisplay" destination="PWS-po-GeY" id="tQO-p6-QLX"/>
                         <outlet property="scoreLabel" destination="0XS-6v-4qO" id="LAo-6Z-L3V"/>
                         <outlet property="tapMeButton" destination="cQA-Tu-Mn7" id="PBY-Hh-lQK"/>
@@ -211,6 +234,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Vku-sC-Dic">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C7P-tR-dmx" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="430" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="0.0124411387" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aRB-jr-tGt"/>
+                                </constraints>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="elD-ql-wAe">
                                 <rect key="frame" x="16" y="36" width="288" height="428"/>
                                 <subviews>
@@ -276,7 +306,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="tapMeClicked:" destination="M41-zb-8rD" eventType="touchUpInside" id="Ib9-Zh-SJQ"/>
+                                                    <action selector="sendSMS:" destination="dvH-RY-lvH" eventType="touchUpInside" id="6wA-5t-etL"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -303,13 +333,17 @@
                             <constraint firstItem="DCk-f1-4qy" firstAttribute="bottom" secondItem="elD-ql-wAe" secondAttribute="bottom" constant="16" id="KMo-Cf-OUO"/>
                             <constraint firstItem="Vku-sC-Dic" firstAttribute="top" secondItem="Y0F-nC-YM5" secondAttribute="top" id="Msc-O1-PPw"/>
                             <constraint firstItem="Vku-sC-Dic" firstAttribute="bottom" secondItem="DCk-f1-4qy" secondAttribute="bottom" id="OPq-hg-XTD"/>
+                            <constraint firstItem="C7P-tR-dmx" firstAttribute="trailing" secondItem="DCk-f1-4qy" secondAttribute="trailing" id="VIH-ml-oxc"/>
                             <constraint firstItem="elD-ql-wAe" firstAttribute="leading" secondItem="DCk-f1-4qy" secondAttribute="leading" constant="16" id="Zgz-i8-A7h"/>
+                            <constraint firstItem="C7P-tR-dmx" firstAttribute="bottom" secondItem="DCk-f1-4qy" secondAttribute="bottom" id="eWT-UI-BcY"/>
                             <constraint firstItem="elD-ql-wAe" firstAttribute="top" secondItem="DCk-f1-4qy" secondAttribute="top" constant="16" id="rL5-HR-N7h"/>
                             <constraint firstItem="DCk-f1-4qy" firstAttribute="trailing" secondItem="elD-ql-wAe" secondAttribute="trailing" constant="16" id="rcA-Eg-S58"/>
+                            <constraint firstItem="C7P-tR-dmx" firstAttribute="leading" secondItem="DCk-f1-4qy" secondAttribute="leading" id="rud-fn-yEQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DCk-f1-4qy"/>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="C7P-tR-dmx" id="FVG-At-5Ka"/>
                         <outlet property="scoresLabel" destination="z7V-YR-6Ta" id="0oW-Vw-b7o"/>
                     </connections>
                 </viewController>
