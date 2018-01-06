@@ -15,9 +15,11 @@ class ViewController: UIViewController , GADBannerViewDelegate{
     @IBOutlet weak var bannerView: GADBannerView!
     @IBOutlet weak var highScore: UILabel!
     @IBOutlet weak var buttonStartGame: UIButton!
+    let homeViewModel:HomeViewModelProtocol = HomeViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         labelHighScore.layer.cornerRadius=5.0
+        
         buttonStartGame.layer.cornerRadius=5.0
         bannerView.isHidden = true
         bannerView.delegate = self
@@ -30,22 +32,11 @@ class ViewController: UIViewController , GADBannerViewDelegate{
         bannerView.isHidden = false
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        highScore.text = homeViewModel.getHighScore()
+    }
     func adView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
         bannerView.isHidden = true
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        let userDefault = UserDefaults.standard
-        let highestScore = userDefault.string(forKey: "highScore")
-        if(highestScore==nil){
-            highScore.text = "0"
-        }else{
-            highScore.text = highestScore
-        }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 

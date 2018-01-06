@@ -158,9 +158,6 @@
                                 <state key="normal" title="Tap Me">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="tapMeClicked:" destination="M41-zb-8rD" eventType="touchUpInside" id="led-gt-aVC"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWS-po-GeY">
                                 <rect key="frame" x="16" y="286" width="288" height="60"/>
@@ -214,7 +211,7 @@
                         <outlet property="bannerView" destination="rXz-6k-Xsy" id="NOg-Yl-89K"/>
                         <outlet property="scoreDisplay" destination="PWS-po-GeY" id="tQO-p6-QLX"/>
                         <outlet property="scoreLabel" destination="0XS-6v-4qO" id="LAo-6Z-L3V"/>
-                        <outlet property="tapMeButton" destination="cQA-Tu-Mn7" id="PBY-Hh-lQK"/>
+                        <outlet property="tapMeButton" destination="cQA-Tu-Mn7" id="57D-GV-Ctu"/>
                         <outlet property="timeRemaining" destination="3nu-3Q-51g" id="YdU-qc-CMa"/>
                         <outlet property="timeRemainingLabel" destination="eTs-7X-DvK" id="XIh-np-lAh"/>
                     </connections>
