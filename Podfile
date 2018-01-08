@@ -7,7 +7,6 @@ target 'Tappy Hands' do
 pod 'Google-Mobile-Ads-SDK'
 pod 'RxSwift',    '~> 4.0'
 pod 'RxCocoa',    '~> 4.0'
-
-  # Pods for Tappy Hands
+pod 'Nimble', :git => 'https://github.com/Quick/Nimble.git', :branch => 'master'  # Pods for Tappy Hands
 
 end

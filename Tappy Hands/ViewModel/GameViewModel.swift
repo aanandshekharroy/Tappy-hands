@@ -2,8 +2,8 @@
 //  GameViewModel.swift
 //  Tappy Hands
 //
-//  Created by Rashi Karanpuria on 31/12/17.
-//  Copyright © 2017 Rashi. All rights reserved.
+//  Created by Aanand on 31/12/17.
+//  Copyright © 2017 Aanand. All rights reserved.
 //
 
 import Foundation

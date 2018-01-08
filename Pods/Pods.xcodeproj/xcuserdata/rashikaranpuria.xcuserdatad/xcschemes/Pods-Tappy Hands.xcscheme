@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9637E02056080567853BF61FD3359BE5"
+               BlueprintIdentifier = "949090E21C06CAC30ECA14E6537A83F5"
                BuildableName = "Pods_Tappy_Hands.framework"
                BlueprintName = "Pods-Tappy Hands"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9637E02056080567853BF61FD3359BE5"
+            BlueprintIdentifier = "949090E21C06CAC30ECA14E6537A83F5"
             BuildableName = "Pods_Tappy_Hands.framework"
             BlueprintName = "Pods-Tappy Hands"
             ReferencedContainer = "container:Pods.xcodeproj">

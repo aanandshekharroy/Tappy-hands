@@ -19,8 +19,19 @@
 		5094BD431FF8BBC50082E509 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5094BD421FF8BBC50082E509 /* GameViewModel.swift */; };
 		50EF27781FF54FAE005CE9EC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EF27771FF54FAE005CE9EC /* GameViewController.swift */; };
 		50EF277A1FF63818005CE9EC /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EF27791FF63818005CE9EC /* EndViewController.swift */; };
+		50EF72832001306600762B20 /* Tappy_HandsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EF72822001306600762B20 /* Tappy_HandsTests.swift */; };
 		FBE9EA5F2D079D5C0FA8F40D /* Pods_Tappy_Hands.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4592975A36F64B4AFD0FAD0 /* Pods_Tappy_Hands.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50EF72852001306600762B20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 507F47811FF4EF2E0043C317 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 507F47881FF4EF2E0043C317;
+			remoteInfo = "Tappy Hands";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		500D03321FF680C7000E5EC5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -37,6 +48,9 @@
 		5094BD421FF8BBC50082E509 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		50EF27771FF54FAE005CE9EC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		50EF27791FF63818005CE9EC /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
+		50EF72802001306600762B20 /* Tappy HandsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tappy HandsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50EF72822001306600762B20 /* Tappy_HandsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tappy_HandsTests.swift; sourceTree = "<group>"; };
+		50EF72842001306600762B20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DAE63BBE8927DA46900E798 /* Pods-Tappy Hands.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tappy Hands.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tappy Hands/Pods-Tappy Hands.release.xcconfig"; sourceTree = "<group>"; };
 		AD9C46FA1F3E932CE74C0244 /* Pods-Tappy Hands.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tappy Hands.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tappy Hands/Pods-Tappy Hands.debug.xcconfig"; sourceTree = "<group>"; };
 		E4592975A36F64B4AFD0FAD0 /* Pods_Tappy_Hands.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tappy_Hands.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +64,13 @@
 				500D03331FF680D0000E5EC5 /* Social.framework in Frameworks */,
 				500D03351FF694FE000E5EC5 /* MessageUI.framework in Frameworks */,
 				FBE9EA5F2D079D5C0FA8F40D /* Pods_Tappy_Hands.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50EF727D2001306600762B20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				507F478B1FF4EF2E0043C317 /* Tappy Hands */,
+				50EF72812001306600762B20 /* Tappy HandsTests */,
 				507F478A1FF4EF2E0043C317 /* Products */,
 				500D03311FF680C7000E5EC5 /* Frameworks */,
 				24E010ADB77DA367957A9450 /* Pods */,
@@ -89,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				507F47891FF4EF2E0043C317 /* Tappy Hands.app */,
+				50EF72802001306600762B20 /* Tappy HandsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,16 +119,12 @@
 		507F478B1FF4EF2E0043C317 /* Tappy Hands */ = {
 			isa = PBXGroup;
 			children = (
+				50EF727A20011CE300762B20 /* View */,
 				5094BD3D1FF7D0950082E509 /* Model */,
 				5094BD3C1FF7D0860082E509 /* ViewModel */,
-				507F478C1FF4EF2E0043C317 /* AppDelegate.swift */,
-				507F478E1FF4EF2E0043C317 /* ViewController.swift */,
-				50EF27771FF54FAE005CE9EC /* GameViewController.swift */,
 				507F47901FF4EF2E0043C317 /* Main.storyboard */,
-				507F47931FF4EF2E0043C317 /* Assets.xcassets */,
-				507F47951FF4EF2E0043C317 /* LaunchScreen.storyboard */,
 				507F47981FF4EF2E0043C317 /* Info.plist */,
-				50EF27791FF63818005CE9EC /* EndViewController.swift */,
+				50EF727B20011D0400762B20 /* Supporting flies */,
 			);
 			path = "Tappy Hands";
 			sourceTree = "<group>";
@@ -125,6 +144,35 @@
 				5094BD401FF8B4220082E509 /* DataManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		50EF727A20011CE300762B20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				507F478E1FF4EF2E0043C317 /* ViewController.swift */,
+				50EF27771FF54FAE005CE9EC /* GameViewController.swift */,
+				50EF27791FF63818005CE9EC /* EndViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		50EF727B20011D0400762B20 /* Supporting flies */ = {
+			isa = PBXGroup;
+			children = (
+				507F478C1FF4EF2E0043C317 /* AppDelegate.swift */,
+				507F47931FF4EF2E0043C317 /* Assets.xcassets */,
+				507F47951FF4EF2E0043C317 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting flies";
+			sourceTree = "<group>";
+		};
+		50EF72812001306600762B20 /* Tappy HandsTests */ = {
+			isa = PBXGroup;
+			children = (
+				50EF72822001306600762B20 /* Tappy_HandsTests.swift */,
+				50EF72842001306600762B20 /* Info.plist */,
+			);
+			path = "Tappy HandsTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +198,24 @@
 			productReference = 507F47891FF4EF2E0043C317 /* Tappy Hands.app */;
 			productType = "com.apple.product-type.application";
 		};
+		50EF727F2001306600762B20 /* Tappy HandsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50EF72892001306600762B20 /* Build configuration list for PBXNativeTarget "Tappy HandsTests" */;
+			buildPhases = (
+				50EF727C2001306600762B20 /* Sources */,
+				50EF727D2001306600762B20 /* Frameworks */,
+				50EF727E2001306600762B20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50EF72862001306600762B20 /* PBXTargetDependency */,
+			);
+			name = "Tappy HandsTests";
+			productName = "Tappy HandsTests";
+			productReference = 50EF72802001306600762B20 /* Tappy HandsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -163,6 +229,11 @@
 					507F47881FF4EF2E0043C317 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+					};
+					50EF727F2001306600762B20 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 507F47881FF4EF2E0043C317;
 					};
 				};
 			};
@@ -180,6 +251,7 @@
 			projectRoot = "";
 			targets = (
 				507F47881FF4EF2E0043C317 /* Tappy Hands */,
+				50EF727F2001306600762B20 /* Tappy HandsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -192,6 +264,13 @@
 				507F47971FF4EF2E0043C317 /* LaunchScreen.storyboard in Resources */,
 				507F47941FF4EF2E0043C317 /* Assets.xcassets in Resources */,
 				507F47921FF4EF2E0043C317 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50EF727E2001306600762B20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,11 +317,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Tappy Hands/Pods-Tappy Hands-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -268,7 +349,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50EF727C2001306600762B20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50EF72832001306600762B20 /* Tappy_HandsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50EF72862001306600762B20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 507F47881FF4EF2E0043C317 /* Tappy Hands */;
+			targetProxy = 50EF72852001306600762B20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		507F47901FF4EF2E0043C317 /* Main.storyboard */ = {
@@ -427,6 +524,36 @@
 			};
 			name = Release;
 		};
+		50EF72872001306600762B20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tappy HandsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bevesto.Tappy-HandsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tappy Hands.app/Tappy Hands";
+			};
+			name = Debug;
+		};
+		50EF72882001306600762B20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Tappy HandsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bevesto.Tappy-HandsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tappy Hands.app/Tappy Hands";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -444,6 +571,15 @@
 			buildConfigurations = (
 				507F479C1FF4EF2E0043C317 /* Debug */,
 				507F479D1FF4EF2E0043C317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50EF72892001306600762B20 /* Build configuration list for PBXNativeTarget "Tappy HandsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50EF72872001306600762B20 /* Debug */,
+				50EF72882001306600762B20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

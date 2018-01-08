@@ -2,17 +2,18 @@
 //  DataManager.swift
 //  Tappy Hands
 //
-//  Created by Rashi Karanpuria on 31/12/17.
-//  Copyright © 2017 Rashi. All rights reserved.
+//  Created by Aanand on 31/12/17.
+//  Copyright © 2017 Aanand. All rights reserved.
 //
 
 import Foundation
 protocol DataProtocol {
-    func getHighScore() -> Int
-    func setHighScore(highScore:Int)
+    func getHighScore() -> Int //Get highest score saved from UserDefaults
+    func setHighScore(highScore:Int) //Save highest score in UserDefaults
 }
 class DataManager: DataProtocol {
     let highScore = "highScore"
+    
     func setHighScore(highScore: Int) {
         let userDefault = UserDefaults()
         userDefault.set(highScore, forKey: self.highScore)

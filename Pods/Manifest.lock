@@ -1,19 +1,32 @@
 PODS:
   - Google-Mobile-Ads-SDK (7.27.0)
+  - Nimble (7.0.3)
   - RxCocoa (4.1.0):
     - RxSwift (~> 4.0)
   - RxSwift (4.1.0)
 
 DEPENDENCIES:
   - Google-Mobile-Ads-SDK
+  - Nimble (from `https://github.com/Quick/Nimble.git`, branch `master`)
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
 
+EXTERNAL SOURCES:
+  Nimble:
+    :branch: master
+    :git: https://github.com/Quick/Nimble.git
+
+CHECKOUT OPTIONS:
+  Nimble:
+    :commit: 22800b0954c89344bb8c87f8ab93378076716fb7
+    :git: https://github.com/Quick/Nimble.git
+
 SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: 83f7f890e638ce8f1debd440ea363338c9f6be3b
+  Nimble: 6254fec7d02791c7dc33722d799f2a951dd147c1
   RxCocoa: cc1fec49cdc8fabe645964de7c51c099a36c2aa8
   RxSwift: 4219941c1244c88002901bd87a69d3aea9ae71f0
 
-PODFILE CHECKSUM: 9e944c9910af82f10584f825f0e2f4b781168b9d
+PODFILE CHECKSUM: b38734acf32c9ccb6b852c3c47d36795d8450624
 
 COCOAPODS: 1.3.1
